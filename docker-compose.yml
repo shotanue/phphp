@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  api:
+    build:
+      context: server
+    tty: true # 一旦tty true
+  web-client:
+    build:
+      context: web-client
+    tty: true # 一旦tty true
