@@ -11,8 +11,10 @@ RUN apk update && apk add --no-cache \
         php7 \
         php7-pdo
 
-WORKDIR /var/www
+WORKDIR /var/www/app
+COPY app .
 
+VOLUME /var/www/app
 
 #ENTRYPOINT [""]
 #CMD [""]

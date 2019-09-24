@@ -3,8 +3,10 @@ version: "3.7"
 services:
   api:
     build:
-      context: server
+      context: servers/api
     tty: true # 一旦tty true
+    volumes:
+      - ./servers/api/app:/var/www/app
   web-client:
     build:
       context: web-client
