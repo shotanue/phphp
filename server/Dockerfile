@@ -11,6 +11,7 @@ RUN apk update && apk add --no-cache \
         php7 \
         php7-pdo
 
+WORKDIR /var/www
 
 
 #ENTRYPOINT [""]
